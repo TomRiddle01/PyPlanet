@@ -83,6 +83,7 @@ class DedimaniaRecordsWidget(TimesWidgetView):
 				if index == player_index:
 					list_record['color'] = '$0f3'
 				list_record['nickname'] = record.nickname
+				list_record['login'] = record.login
 				list_record['score'] = times.format_time(int(record.score))
 				if index == self.top_entries:
 					index = custom_start_index
